@@ -1,4 +1,6 @@
 nav ul {
+    /* Lower Priority wins, so there's no discs */
+    list-style-type: disc;
     list-style-type: none;
 }
 
