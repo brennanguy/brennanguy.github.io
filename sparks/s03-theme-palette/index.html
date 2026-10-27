@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Veilguard | Theme palette</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <p class="eyebrow">S03 / Theme Palette</p>
+    <h1>Eleutheria</h1>
+    <nav aria-label="Main">
+      <ul class="primary-nav">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="#palette">Review the palette</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="theme-intro" aria-labelledby="about-heading">
+      <h2 id="about-heading">About this theme</h2>
+      <p>
+        This visual system belongs to our secret organization dedicated to defending the world from the shadows against the return of the Ordo. Abyss and Steel blue give our identity a quiet, controlled foundation. Cipher keeps reports readable, while Relic gold marks important actions and signals. The result should feel disciplined and watchful, not flashy.
+      </p>
+      <button type="button">Contact Information</button>
+      <p>(Intern, please hire someone to fix the above button. <br> - Shadow)</p>
+    </section>
+
+    <section id="palette" aria-labelledby="palette-heading">
+      <h2 id="palette-heading">Palette</h2>
+      <ul class="palette-grid">
+        <li>
+          <article class="palette-card" aria-labelledby="abyss-heading">
+            <span class="swatch swatch-background" aria-hidden="true"></span>
+            <h3 id="abyss-heading">Abyss</h3>
+            <p>Role: Page background</p>
+            <dl class="color-values">
+              <dt>HEX</dt><dd>#111B26</dd>
+              <dt>RGB</dt><dd>rgb(17, 27, 38)</dd>
+              <dt>HSL</dt><dd>hsl(211.43, 38.18%, 10.78%)</dd>
+            </dl>
+          </article>
+        </li>
+        <li>
+          <article class="palette-card" aria-labelledby="cipher-heading">
+            <span class="swatch swatch-text" aria-hidden="true"></span>
+            <h3 id="cipher-heading">Cipher</h3>
+            <p>Role: Main text</p>
+            <dl class="color-values">
+              <dt>HEX</dt><dd>#F3F5F7</dd>
+              <dt>RGB</dt><dd>rgb(243, 245, 247)</dd>
+              <dt>HSL</dt><dd>hsl(210, 20%, 96.08%)</dd>
+            </dl>
+          </article>
+        </li>
+        <li>
+          <article class="palette-card" aria-labelledby="steel-heading">
+            <span class="swatch swatch-accent" aria-hidden="true"></span>
+            <h3 id="steel-heading">Steel blue</h3>
+            <p>Role: Accent and heading gradient</p>
+            <dl class="color-values">
+              <dt>HEX</dt><dd>#28536B</dd>
+              <dt>RGB</dt><dd>rgb(40, 83, 107)</dd>
+              <dt>HSL</dt><dd>hsl(201.49, 45.58%, 28.82%)</dd>
+            </dl>
+          </article>
+        </li>
+        <li>
+          <article class="palette-card" aria-labelledby="relic-heading">
+            <span class="swatch swatch-highlight" aria-hidden="true"></span>
+            <h3 id="relic-heading">Relic gold</h3>
+            <p>Role: Links and button highlight</p>
+            <dl class="color-values">
+              <dt>HEX</dt><dd>#D6B35A</dd>
+              <dt>RGB</dt><dd>rgb(214, 179, 90)</dd>
+              <dt>HSL</dt><dd>hsl(43.06, 60.19%, 59.61%)</dd>
+            </dl>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="contrast-heading">
+      <h2 id="contrast-heading">Contrast checks</h2>
+      <table class="contrast-table">
+        <caption>Text contrast ratios from the WebAIM Contrast Checker</caption>
+        <thead>
+          <tr>
+            <th scope="col">Text color</th>
+            <th scope="col">Background</th>
+            <th scope="col">Ratio</th>
+            <th scope="col">Use</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Cipher (#F3F5F7)</th>
+            <td>Abyss (#111B26)</td>
+            <td>15.89:1</td>
+            <td>Body text</td>
+          </tr>
+          <tr>
+            <th scope="row">Cipher (#F3F5F7)</th>
+            <td>Steel blue (#28536B), gradient's brightest end</td>
+            <td>7.56:1</td>
+            <td>Body text</td>
+          </tr>
+          <tr>
+            <th scope="row">Relic gold (#D6B35A)</th>
+            <td>Abyss (#111B26)</td>
+            <td>8.65:1</td>
+            <td>Body text</td>
+          </tr>
+          <tr>
+            <th scope="row">Abyss (#111B26)</th>
+            <td>Relic gold (#D6B35A)</td>
+            <td>8.65:1</td>
+            <td>Body text</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="contrast-note">
+        The heading uses Cipher on a gradient from Steel blue to Abyss; its lowest ratio is 7.56:1 at the Steel blue end. Focus outlines use Cipher: 15.89:1 against Abyss and 7.56:1 against Steel blue, both above the 3:1 non-text target. Swatch borders also exceed 3:1; the lowest is 4.11:1 for Relic gold against Steel blue.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contrast values checked with the <a href="https://webaim.org/resources/contrastchecker/">WebAIM Contrast Checker</a>.</p>
+  </footer>
+</body>
+</html>
