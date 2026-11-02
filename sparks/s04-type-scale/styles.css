@@ -16,6 +16,10 @@ body {
   font-size: 1.125rem;
 }
 
+main {
+  overflow-wrap: anywhere;
+}
+
 .hero,
 main,
 footer {
