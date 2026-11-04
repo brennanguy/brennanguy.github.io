@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>P1 | Color + Typography</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <p class="eyebrow">Prototype 01 / Color + Typography</p>
+    <h1>Overview</h1>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="richard-bright.html">Richard Bright campaign</a></li>
+        <li><a href="secrets-o-pedia.html">Secrets-o-pedia</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="intro-heading">
+      <h2 id="intro-heading">Prototype Summary</h2>
+      <p>
+        This prototype is to demonstrate what I have learned about color and type and how important they can help distinguish the "vibe" of a project at a glance. Richard Bright’s fictional campaign uses a measured, civic palette and editorial type to suggest open, dependable leadership. Secrets-o-pedia uses near-black surfaces, and file-like mono headings to make its "creepy-pasta" collection feel like you're entering a space you were never meant to find.
+      </p>
+    </section>
+
+    <section aria-labelledby="bright-heading">
+      <h2 id="bright-heading">Richard Bright campaign</h2>
+      <p><a href="richard-bright.html">Visit the campaign page</a></p>
+      <h3>Palette and type choices</h3>
+      <ul>
+        <li><strong>Campaign navy, #17324D:</strong> signals strength and civic trust and anchors the masthead.</li>
+        <li><strong>Field paper, #F6F3EA:</strong> recalls printed town notices and gives policies a calm ground.</li>
+        <li><strong>Slate ink, #243746:</strong> keeps everyday campaign text simple and distinct from the banner.</li>
+        <li><strong>Sun gold, #F2C14E:</strong> gives the campaign call to action an optimistic, visible highlight that portrays importance.</li>
+      </ul>
+      <p><strong>Lora</strong> gives the candidate’s name and section headings an editorial, official feel; <strong>Source Sans 3</strong> keeps service details easy to scan. Both use system font fallbacks.</p>
+      <h3>WebAIM contrast results</h3>
+      <table>
+        <caption>Richard Bright campaign text pairs, checked with WebAIM’s Contrast Checker</caption>
+        <thead>
+          <tr>
+            <th scope="col">Text</th>
+            <th scope="col">Background</th>
+            <th scope="col">Ratio</th>
+            <th scope="col">Use</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Slate ink (#243746)</th>
+            <td>Field paper (#F6F3EA)</td>
+            <td>11.06:1</td>
+            <td>Body text</td>
+          </tr>
+          <tr>
+            <th scope="row">Field paper (#F6F3EA)</th>
+            <td>Campaign navy (#17324D)</td>
+            <td>11.83:1</td>
+            <td>Body text</td>
+          </tr>
+          <tr>
+            <th scope="row">Campaign navy (#17324D)</th>
+            <td>Field paper (#F6F3EA)</td>
+            <td>11.83:1</td>
+            <td>Body text</td>
+          </tr>
+          <tr>
+            <th scope="row">Campaign navy (#17324D)</th>
+            <td>Sun gold (#F2C14E)</td>
+            <td>7.82:1</td>
+            <td>Body text</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Focus outlines use Campaign navy on Field paper (11.83:1), Sun gold on Campaign navy (7.82:1), and Campaign navy on Sun gold (7.82:1).</p>
+    </section>
+
+    <section aria-labelledby="archive-heading">
+      <h2 id="archive-heading">Secrets-o-pedia</h2>
+      <p><a href="secrets-o-pedia.html">Visit the creepy-pasta repository</a></p>
+      <h3>Palette and type choices</h3>
+      <ul>
+        <li><strong>Night index, #15171D:</strong> gives a dark secretive vibe, as well as making the page more condusive to nightime reading than out in the sunlight.</li>
+        <li><strong>File bone, #EEE6D3:</strong> gives long entries a softer reading color than pure white and contrasting well with "Night Index".</li>
+        <li><strong>Signal amber, #DBB45A:</strong> gives a sense of danger to links and headings.</li>
+        <li><strong>Alert red, #CD5148:</strong> much like "Signal Amber" it gives a sense of danger, as well as a spooky vibe.</li>
+      </ul>
+      <p><strong>IBM Plex Mono</strong> makes titles and file labels feel machine-indexed, and gives the site a retro feel that suggests a long history on the web; <strong>system-ui</strong> keeps the text familiar and readable while also suggesting perhaps an amateurish nature to the site's coding. Both font families have generic fallbacks.</p>
+      <h3>WebAIM contrast results</h3>
+      <table>
+        <caption>Secrets-o-pedia text pairs, checked with WebAIM’s Contrast Checker</caption>
+        <thead>
+          <tr>
+            <th scope="col">Text</th>
+            <th scope="col">Background</th>
+            <th scope="col">Ratio</th>
+            <th scope="col">Use</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">File bone (#EEE6D3)</th>
+            <td>Night index (#15171D)</td>
+            <td>14.41:1</td>
+            <td>Body text</td>
+          </tr>
+          <tr>
+            <th scope="row">Signal amber (#DBB45A)</th>
+            <td>Night index (#15171D)</td>
+            <td>9.11:1</td>
+            <td>Body text</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Focus outlines use Signal amber on Night index (9.11:1). The Alert red divider is decorative, with 4.15:1 contrast against Night index.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Prototype 01 / Color + Typography</p>
+  </footer>
+</body>
+</html>
