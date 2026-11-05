@@ -45,7 +45,7 @@ footer {
 .hero > *,
 main,
 footer > * {
-  max-width: 42rem;
+  max-width: 33rem;
   margin-right: auto;
   margin-left: auto;
 }
